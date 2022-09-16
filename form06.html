@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="estilos/style.css" media="screen">
+</head>
+<body>
+    <form action="mailto:nome@email.com.br" method="post" enctype="text/plain">
+        <h1>Exemplo de Formulário</h1>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="iusu">Usuario: </label>
+                <input type="text" name="usu" id="iusu" required minlength="5" maxlength="30" placeholder="Nome do usuário">
+            </p>
+            <p>
+                <label for="isen">Senha: </label>
+                <input type="password" name="sen" id="isen" required minlength="8" maxlength="20" placeholder="Digite a senha">
+            </p>
+            <p>
+                <label for="iemail"> E-mail:</label>
+                <input type="email" name="email" id="iemail" required><br>
+               <br> <textarea name="email" id="iemail" cols="30" rows="10"> </textarea>
+            <p>
+                <label for="itel">Telefone:</label>
+                <input type="tel" name="tel" id="itel" required placeholder="(xx)xxxxx-xxxx">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isxmas" value="M" required> <label for="isxmas" > Masculino</label>
+            <input type="radio" name="sexo" id="isxfem" value="F" required> <label for="isxfem"> Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Faculdade</legend>
+            <input type="checkbox" name="Sistemas" id="isistemas"> <label for="isistemas">Sistemas da informação</label><br>
+            <input type="checkbox" name="edf" id="iedf"> <label for="iedf">Educação física</label><br>
+            <input type="checkbox" name="dir" id="idir"> <label for="idir">Direito</label><br>
+            <input type="checkbox" name="psic" id="ipsic"> <label for="ipsic">Psicologia</label><br>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
